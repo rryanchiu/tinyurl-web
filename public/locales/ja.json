@@ -1,0 +1,13 @@
+{
+  "shortenUrl": "短縮リンクを生成",
+  "enterLongUrl": "リンクを入力してください",
+  "pleaseEnterAURL": "リンクを先に入力してください",
+  "expiration": "有効期限",
+  "shortUrl": "短縮リンク",
+  "day_1": "1日",
+  "day_7": "7日",
+  "day_30": "30日",
+  "day_365": "1年",
+  "invalidUrl": "正しいURLを入力してください",
+  "alreadyCopy": "短縮リンクがクリップボードにコピーされました"
+}

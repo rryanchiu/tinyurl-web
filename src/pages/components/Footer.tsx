@@ -1,7 +1,11 @@
 function Footer() {
     return (
-        <footer className="h-18 fixed bottom-0 left-0 w-full text-align-center">
-            <p className='text-gray-400'>Ryan © 2024</p>
+        <footer className="footer text-gray-400">
+            Made by <a className='mylink' target='_blank'
+                       href='https://rryan.me'>Ryan</a> | <a className='mylink'
+                                                                    target='_blank'
+                                                                    href='https://github.com/rryanchiu/tinyurl'>Source
+            Code</a>
         </footer>
     )
 }

@@ -1,5 +1,13 @@
 {
   "shortenUrl": "生成短链接",
   "enterLongUrl":"请输入链接",
-  "expiration": "过期时间"
+  "pleaseEnterAURL": "请先输入链接",
+  "expiration": "过期时间",
+  "shortUrl": "短链接",
+  "day_1": "1天",
+  "day_7": "7天",
+  "day_30": "30天",
+  "day_365": "1年",
+  "invalidUrl": "请输入正确的网址",
+  "alreadyCopy": "短链接已复制到剪切板"
 }

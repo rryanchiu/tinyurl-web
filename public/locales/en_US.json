@@ -1,5 +1,13 @@
 {
   "shortenUrl": "Shorten URL",
-  "enterLongUrl":"Enter long URL",
-  "expiration": "Expiration"
+  "enterLongUrl": "Enter a long URL",
+  "pleaseEnterAURL": "Please enter a URL.",
+  "expiration": "Expiration",
+  "shortUrl": "Short URL",
+  "day_1": "1 day",
+  "day_7": "7 days",
+  "day_30": "30 days",
+  "day_365": "1 year",
+  "invalidUrl": "Invalid URL!",
+  "alreadyCopy": "ShortURL copied to clipboard!"
 }

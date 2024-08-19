@@ -7,8 +7,7 @@ function App() {
 
 
     return (
-
-        <div className="w-full h-screen flex flex-col min-h-screen w-full">
+        <div className="container h-full w-screen flex fullscreen ">
             <Header/>
             <TinyUrlBody/>
             <Footer/>

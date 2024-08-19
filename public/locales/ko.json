@@ -1,0 +1,13 @@
+{
+  "shortenUrl": "단축 링크 생성",
+  "enterLongUrl": "링크를 입력하세요",
+  "pleaseEnterAURL": "먼저 링크를 입력하세요",
+  "expiration": "만료 시간",
+  "shortUrl": "단축 링크",
+  "day_1": "1일",
+  "day_7": "7일",
+  "day_30": "30일",
+  "day_365": "1년",
+  "invalidUrl": "올바른 URL을 입력하세요",
+  "alreadyCopy": "단축 링크가 클립보드에 복사되었습니다"
+}

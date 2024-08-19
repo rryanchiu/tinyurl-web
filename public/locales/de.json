@@ -1,0 +1,13 @@
+{
+  "shortenUrl": "Kurzlink generieren",
+  "enterLongUrl": "Bitte URL eingeben",
+  "pleaseEnterAURL": "Bitte zuerst eine URL eingeben",
+  "expiration": "Ablaufzeit",
+  "shortUrl": "Kurzlink",
+  "day_1": "1 Tag",
+  "day_7": "7 Tage",
+  "day_30": "30 Tage",
+  "day_365": "1 Jahr",
+  "invalidUrl": "Bitte geben Sie eine gültige URL ein",
+  "alreadyCopy": "Kurzlink wurde in die Zwischenablage kopiert"
+}

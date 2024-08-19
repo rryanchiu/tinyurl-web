@@ -1,0 +1,13 @@
+{
+  "shortenUrl": "產生短網址",
+  "enterLongUrl": "請輸入網址",
+  "pleaseEnterAURL": "請先輸入網址",
+  "expiration": "過期時間",
+  "shortUrl": "短網址",
+  "day_1": "1天",
+  "day_7": "7天",
+  "day_30": "30天",
+  "day_365": "1年",
+  "invalidUrl": "請輸入正確的網址",
+  "alreadyCopy": "短網址已複製到剪貼簿"
+}
