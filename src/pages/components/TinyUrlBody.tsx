@@ -25,6 +25,7 @@ const TinyUrlBody = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const [currentLanguage, setCurrentLanguage] = useState('');
     const [expiration, setExpiration] = useState<number>(7);
+    const [loading, setLoading] = useState(false);
 
     const {t, i18n} = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
@@ -77,6 +78,7 @@ const TinyUrlBody = () => {
             return;
         }
 
+        setLoading(true);
         const expireSeconds = expiration * 24 * 60 * 60;
         const data: ShortenRequest = {
             expireSeconds: expireSeconds,
@@ -84,6 +86,8 @@ const TinyUrlBody = () => {
         }
 
         getShortUrl(data).then((result: ShortenResponse | undefined | null) => {
+            setLoading(false);
+
             if (!result) {
                 setErrorMessage(t('failedToShortenURL') + t('resultIsEmpty'));
                 return
@@ -178,9 +182,22 @@ const TinyUrlBody = () => {
                     {/*    {t('shortenUrl')}*/}
                     {/*</button>*/}
                 </div>
-                <button className="shorten-button shorten-button-sm w-full py-3 mt-5" onClick={generateShortUrl}>
-                    {t('shortenUrl')}
-                </button>
+
+                {loading && (
+                    <button className="shorten-button shorten-button-sm w-full py-3 mt-5 ">
+                        <div className='animate-spin'>
+                            <i className="ri-loader-4-line"></i>
+                        </div>
+                    </button>
+                )}
+                {!loading && (
+                    <button className="shorten-button shorten-button-sm w-full py-3 mt-5 "
+                            onClick={generateShortUrl}
+                    >
+                        {t('shortenUrl')}
+                    </button>
+                )}
+
                 {shortUrl && (
                     <>
                         <div className="border-t border-gray-300"></div>
@@ -188,7 +205,7 @@ const TinyUrlBody = () => {
                             <div className="mr-2 text-gray-500">
                                 <i className="ri-earth-fill  text-lg"></i></div>
                             <p className="flex-grow p-1 break-all">{t('shortUrl')}: <a href={shortUrl} target="_blank"
-                                                                             rel="noopener noreferrer">{shortUrl}</a>
+                                                                                       rel="noopener noreferrer">{shortUrl}</a>
                             </p>
 
                             <button
