@@ -85,7 +85,7 @@ const TinyUrlBody = () => {
 
         getShortUrl(data).then((result: ShortenResponse | undefined | null) => {
             if (!result) {
-                setErrorMessage('Failed to shorten the URL: result is empty!');
+                setErrorMessage(t('failedToShortenURL') + t('resultIsEmpty'));
                 return
             }
             // 检查返回的 code 是否为 0 表示成功
@@ -94,7 +94,7 @@ const TinyUrlBody = () => {
                 setShortUrl(result.data.shortUrl);
             } else {
                 setShortUrl('')
-                setErrorMessage('Failed to shorten the URL:' + result.message);
+                setErrorMessage(t('failedToShortenURL') + result.message);
                 return;
             }
 

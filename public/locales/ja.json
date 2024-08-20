@@ -9,5 +9,7 @@
   "day_30": "30日",
   "day_365": "1年",
   "invalidUrl": "正しいURLを入力してください",
-  "alreadyCopy": "短縮リンクがクリップボードにコピーされました"
+  "alreadyCopy": "短縮リンクがクリップボードにコピーされました",
+  "failedToShortenURL": "操作に失敗しました: ",
+  "resultIsEmpty": "リモートリクエストの結果が空です"
 }

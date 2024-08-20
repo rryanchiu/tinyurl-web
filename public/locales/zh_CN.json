@@ -9,5 +9,7 @@
   "day_30": "30天",
   "day_365": "1年",
   "invalidUrl": "请输入正确的网址",
-  "alreadyCopy": "短链接已复制到剪切板"
+  "alreadyCopy": "短链接已复制到剪切板",
+  "failedToShortenURL": "操作失败: ",
+  "resultIsEmpty": "远程请求结果为空"
 }

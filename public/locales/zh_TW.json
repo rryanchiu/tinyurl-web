@@ -9,5 +9,7 @@
   "day_30": "30天",
   "day_365": "1年",
   "invalidUrl": "請輸入正確的網址",
-  "alreadyCopy": "短網址已複製到剪貼簿"
+  "alreadyCopy": "短網址已複製到剪貼簿",
+  "failedToShortenURL": "操作失敗: ",
+  "resultIsEmpty": "遠程請求結果為空"
 }

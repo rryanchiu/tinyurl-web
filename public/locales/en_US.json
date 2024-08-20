@@ -9,5 +9,7 @@
   "day_30": "30 days",
   "day_365": "1 year",
   "invalidUrl": "Invalid URL!",
-  "alreadyCopy": "ShortURL copied to clipboard!"
+  "alreadyCopy": "ShortURL copied to clipboard!",
+  "failedToShortenURL": "Operation failed: ",
+  "resultIsEmpty": "Remote request result is empty!"
 }
