@@ -101,13 +101,13 @@ button:focus-visible {
         padding: 10px !important;
     }
 
-    .shorten-button {
-        display: none;
-    }
+    /*.shorten-button {*/
+    /*    display: none;*/
+    /*}*/
 
-    .shorten-button-sm {
-        display: block;
-    }
+    /*.shorten-button-sm {*/
+    /*    display: block;*/
+    /*}*/
 
     .card {
         height: calc(100vh - 40px);

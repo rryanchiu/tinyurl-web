@@ -174,9 +174,9 @@ const TinyUrlBody = () => {
                         className="flex-grow p-2 bg-transparent outline-none border-none text-gray-7  text-lg"
                     />
 
-                    <button className="shorten-button" onClick={generateShortUrl}>
-                        {t('shortenUrl')}
-                    </button>
+                    {/*<button className="shorten-button" onClick={generateShortUrl}>*/}
+                    {/*    {t('shortenUrl')}*/}
+                    {/*</button>*/}
                 </div>
                 <button className="shorten-button shorten-button-sm w-full py-3 mt-5" onClick={generateShortUrl}>
                     {t('shortenUrl')}
