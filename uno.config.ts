@@ -19,6 +19,8 @@ export default defineConfig({
         'card-body': 'flex-grow  p-5 ',
         'mylink':'text-gray-400 hover:text-dark-400 underline ',
         'select-button':'w-30 rd-none text-left bg-white hover:border-white hover:bg-gray-100',
+        'icon':'top--5 left--5 absolute m-0 font-900 text-[30px] flex items-center ',
+        'headericon':'w-20',
 
         'card':"bg-white  p-10 mx-auto float-center box-shadow mg-0-auto max-w-2xl rd-2xl ",
         'shorten-button':"bg-dark-200 text-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:border-gray-2",

@@ -116,7 +116,9 @@ const TinyUrlBody = () => {
         <main className="card-body">
             <div className=" card shadow-2xl shadow-black/8">
                 <div className="text-align-end relative mb-15 ">
-                    <div className="absolute m-0 font-900 text-[30px]">TinyUrl</div>
+                    <div className="icon">
+                        <img src="/favicon.ico" className="headericon"/> TinyURL
+                    </div>
                     {/*<button*/}
                     {/*    onClick={() => setIsDark(!isDark)}*/}
                     {/*    className="m1  bg-gray-100 text-gray-800 font-semibold py-2 px-2 circle inline-flex items-center ">*/}
