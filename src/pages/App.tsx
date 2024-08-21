@@ -7,7 +7,7 @@ function App() {
 
 
     return (
-        <div className="container h-full w-screen flex fullscreen ">
+        <div id='container' className="container h-full w-screen flex fullscreen">
             <Header/>
             <TinyUrlBody/>
             <Footer/>
