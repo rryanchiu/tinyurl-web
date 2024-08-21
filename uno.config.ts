@@ -3,6 +3,15 @@ import {defineConfig, presetAttributify, presetIcons, presetTypography, presetUn
 export default defineConfig({
     theme: {
         colors: {},
+        breakpoints: {
+            xxs: '0px',
+            xs: '320px',
+            sm: '480px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            xxl: '1600px',
+        },
     },
     presets: [
         presetIcons({scale: 1.2, warn: true}),
@@ -13,16 +22,21 @@ export default defineConfig({
         presetTypography({}),
     ],
     shortcuts: [{
-        'container': 'w-full h-screen flex flex-col ',
+        'container': 'w-full h-screen flex flex-col text-dark dark:text-color-gray-1 ',
+
+        'style-btn':'m1 font-semibold py-2 px-2 circle inline-flex items-center b-0 bg-gray-1  dark:bg-dark-300 hover:bg-gray-2 hover:dark:bg-dark-200',
+        'style-dropdown-menu':'absolute px-1 py-2 right-0 list-none mt-1 w-30 text-sm  bg-white border border-gray-200 rounded shadow-lg group-hover:block z-100 dark:bg-dark-300 b-0',
+        'style-dropdown-menu-item':'w-28 rd-none text-left bg-white hover:border-white hover:bg-gray-100 p2 dark:bg-dark-300',
+
         'header': 'h-18  top-0 left-0 w-full ',
-        'footer': 'h-10 absolute bottom-0 left-0 w-full text-align-center',
+        'footer': 'h-10 absolute bottom-0 left-0 w-full text-align-center ',
         'card-body': 'flex-grow  p-5 ',
-        'mylink':'text-gray-400 hover:text-dark-400 underline ',
-        'select-button':'w-30 rd-none text-left bg-white hover:border-white hover:bg-gray-100',
+        'mylink':'text-gray-400 hover:text-dark-400 underline dark:hover:text-gray-600',
         'icon':'top--5 left--5 absolute m-0 font-900 text-[30px] flex items-center ',
         'headericon':'w-20',
+        'button-dark':' dark:bg-dark-300 dark:text-gray-300 dark:hover:bg-dark-200 dark:hover:b-dark-200 ',
 
-        'card':"bg-white  p-10 mx-auto float-center box-shadow mg-0-auto max-w-2xl rd-2xl ",
+        'card':"bg-white  p-10 mx-auto float-center box-shadow mg-0-auto max-w-2xl rd-2xl dark:bg-dark-1",
         'shorten-button':"bg-dark-200 text-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:border-gray-2",
         // 'fullscreen':' px-20 py-10 ',
         // 'layout': ' w-full h-full  flex relative  bg-white  dark:bg-dark-4   overflow-hidden  ',

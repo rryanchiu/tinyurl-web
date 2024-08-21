@@ -33,10 +33,6 @@ body {
     /*place-items: center;*/
     height: 100%;
     width: 100%;
-    /*background-image: linear-gradient(to right, #ccc, #999 ,#ccc );*/
-
-    /*background-image: linear-gradient(90deg, #ffffff00 0%, #efefef02 22%, #cccccc30 55%, #efefef02 80%, #ffffff00 100%);*/
-    background-image: linear-gradient(100deg, #ffa9f900 -10%, #ffa7ad10 20%, #ffa7ad50 60%, #ffa9f910 90%, #ffa9f900 160%);
 }
 
 h1 {
@@ -65,21 +61,6 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
-}
-
 [hidden] {
     display: none;
 }
@@ -101,14 +82,6 @@ button:focus-visible {
         padding: 10px !important;
     }
 
-    /*.shorten-button {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.shorten-button-sm {*/
-    /*    display: block;*/
-    /*}*/
-
     .card {
         height: calc(100vh - 40px);
     }
@@ -126,4 +99,14 @@ button:focus-visible {
     .headericon {
         width: 50px !important;
     }
+}
+
+#container {
+    background-color: #fff;
+    background-image: linear-gradient(100deg, #ffa9f900 -10%, #ffa7ad10 20%, #ffa7ad50 60%, #ffa9f910 90%, #ffa9f900 160%);
+}
+
+.dark #container {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(100deg, #1a1a1a -10%, #44444410 20%, #55555550 60%, #44444410 90%, #33333300 160%);
 }

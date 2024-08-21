@@ -6,16 +6,16 @@ import zhTW from './zh_TW.json';
 import ja from './ja.json';
 import ko from './ko.json';
 import de from './de.json';
-
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
     'en': {
         translation: enUS,
     },
-    'zh_cn': {
+    'zh-CN': {
         translation: zhCN,
     },
-    'zh_tw': {
+    'zh-TW': {
         translation: zhTW,
     },
     'ja': {
@@ -29,12 +29,15 @@ const resources = {
     },
 };
 
-i18n.use(initReactI18next).init({
-    resources,
-    lng: 'en',
-    interpolation: {
-        escapeValue: false,
-    },
-});
+i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+        resources,
+        fallbackLng: 'en',
+        interpolation: {
+            escapeValue: false,
+        },
+    });
 
 export default i18n;
