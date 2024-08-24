@@ -17,7 +17,7 @@ export interface ShortenRequest {
 
 
 export async function getShortUrl(request: ShortenRequest): Promise<ShortenResponse | null> {
-    const apiUrl = 'https://tinyurlapi.rryan.me/api/tinyurl/shorten';
+    const apiUrl = 'https://s.rryan.me/api/tinyurl/shorten';
 
     try {
         const response = await fetch(apiUrl, {
